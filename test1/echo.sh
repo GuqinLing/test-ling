@@ -1,2 +1,7 @@
-if [ a -eq &#39;0&#39; ]
- echo "hello world"
+#!bin/sh/
+
+sh /usr/bin/start_ss.sh
+mkdir dnsmasq
+cd dnsmasq
+touch ipset.conf
+cp ../gfwlist.txt ./ipset.conf
